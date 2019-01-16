@@ -1,0 +1,368 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Modelos</name>
+    </assembly>
+    <members>
+        <member name="T:BankTwo_v2.Funcionarios.IAutenticavel">
+            <summary>
+            Interface que obriga a implementação do método <see cref="M:BankTwo_v2.Funcionarios.IAutenticavel.Autenticar(System.String)"/> nas classes filha.
+            </summary>
+        </member>
+        <member name="M:BankTwo_v2.Funcionarios.IAutenticavel.Autenticar(System.String)">
+            <summary>
+            Método para autorizar a entrada no sistema.
+            </summary>
+            <param name="senha">Senha que será comparada para autorizar a entrada no sistema.</param>
+            <returns>retorna True ou False.</returns>
+        </member>
+        <member name="T:BankTwo_v2.Funcionarios.Auxiliar">
+            <summary>
+            Define um <see cref="T:BankTwo_v2.Funcionarios.Auxiliar"/> no banco BankNumbers.
+            </summary>
+        </member>
+        <member name="M:BankTwo_v2.Funcionarios.Auxiliar.#ctor(System.String)">
+            <summary>
+            Cria uma instância de um funcionário com cargo de <see cref="T:BankTwo_v2.Funcionarios.Auxiliar"/>.
+            </summary>
+            <param name="cpf">Texto do CPF do funcionáro.</param>
+        </member>
+        <member name="M:BankTwo_v2.Funcionarios.Auxiliar.GetBonificacao">
+            <summary>
+            Calcula a bonificação do <see cref="T:BankTwo_v2.Funcionarios.Auxiliar"/>.
+            </summary>
+            <returns>Retorna o valor calculado da bonificação.</returns>
+        </member>
+        <member name="M:BankTwo_v2.Funcionarios.Auxiliar.AumentarSalario">
+            <summary>
+            Calcula e define o novo salário do <see cref="T:BankTwo_v2.Funcionarios.Auxiliar"/>.
+            </summary>
+        </member>
+        <member name="T:BankTwo_v2.Funcionarios.Designer">
+            <summary>
+            Define um <see cref="T:BankTwo_v2.Funcionarios.Designer"/> no banco BankNumbers.
+            </summary>
+        </member>
+        <member name="M:BankTwo_v2.Funcionarios.Designer.#ctor(System.String)">
+            <summary>
+            Cria uma instância de um funcionário com cargo de <see cref="T:BankTwo_v2.Funcionarios.Designer"/>.
+            </summary>
+            <param name="cpf">Texto do CPF do funcionáro.</param>
+        </member>
+        <member name="M:BankTwo_v2.Funcionarios.Designer.GetBonificacao">
+            <summary>
+            Calcula a bonificação do <see cref="T:BankTwo_v2.Funcionarios.Designer"/>.
+            </summary>
+            <returns>Retorna o valor calculado da bonificação.</returns>
+        </member>
+        <member name="M:BankTwo_v2.Funcionarios.Designer.AumentarSalario">
+            <summary>
+            Calcula e define o novo salário do <see cref="T:BankTwo_v2.Funcionarios.Designer"/>.
+            </summary>
+        </member>
+        <member name="T:BankTwo_v2.Funcionarios.Diretor">
+            <summary>
+            Define um <see cref="T:BankTwo_v2.Funcionarios.Diretor"/> no banco BankNumbers.
+            </summary>
+        </member>
+        <member name="M:BankTwo_v2.Funcionarios.Diretor.#ctor(System.String)">
+            <summary>
+            Cria uma instância de um funcionário com cargo de <see cref="T:BankTwo_v2.Funcionarios.Diretor"/>.
+            </summary>
+            <param name="cpf">Texto do CPF do funcionáro.</param>
+        </member>
+        <member name="M:BankTwo_v2.Funcionarios.Diretor.GetBonificacao">
+            <summary>
+            Calcula a bonificação do <see cref="T:BankTwo_v2.Funcionarios.Diretor"/>.
+            </summary>
+            <returns>Retorna o valor calculado da bonificação.</returns>
+        </member>
+        <member name="M:BankTwo_v2.Funcionarios.Diretor.AumentarSalario">
+            <summary>
+            Calcula e define o novo salário do <see cref="T:BankTwo_v2.Funcionarios.Diretor"/>.
+            </summary>
+        </member>
+        <member name="T:BankTwo_v2.Funcionarios.Funcionario">
+            <summary>
+            Classe abstrata base para a definição de funcionários.
+            </summary>
+        </member>
+        <member name="P:BankTwo_v2.Funcionarios.Funcionario.TotalDeFuncionarios">
+            <summary>
+            Numero de Funcionários do banco BankNumbers.
+            </summary>
+        </member>
+        <member name="P:BankTwo_v2.Funcionarios.Funcionario.Nome">
+            <summary>
+            Define nome do funcionario.
+            </summary>
+        </member>
+        <member name="P:BankTwo_v2.Funcionarios.Funcionario.CPF">
+            <summary>
+            Define CPF do funcionario.
+            </summary>
+        </member>
+        <member name="P:BankTwo_v2.Funcionarios.Funcionario.Salario">
+            <summary>
+            Define salário do funcionario.
+            </summary>
+        </member>
+        <member name="M:BankTwo_v2.Funcionarios.Funcionario.#ctor(System.Double,System.String)">
+            <summary>
+            Cria uma instância de funcionário a partir dos argumentos recebidos.
+            </summary>
+            <param name="salario">Salário do Funcionário</param>
+            <param name="cpf">CPF do funcionário</param>
+        </member>
+        <member name="M:BankTwo_v2.Funcionarios.Funcionario.GetBonificacao">
+            <summary>
+            Método abstrato a ser definido pelas Classes filha.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BankTwo_v2.Funcionarios.Funcionario.AumentarSalario">
+            <summary>
+            Método abstrato a ser definido pelas Classes filha.
+            </summary>
+        </member>
+        <member name="T:BankTwo_v2.Funcionarios.FuncionarioAutenticavel">
+            <summary>
+            Define um funcionário que necessita autenticação.
+            </summary>
+        </member>
+        <member name="M:BankTwo_v2.Funcionarios.FuncionarioAutenticavel.#ctor(System.Double,System.String)">
+            <summary>
+            Cria uma instância de Funcionário que necessita autenticação.
+            </summary>
+            <param name="salario">Salário do funcionario.</param>
+            <param name="cpf">CPF do funcionario.</param>
+        </member>
+        <member name="P:BankTwo_v2.Funcionarios.FuncionarioAutenticavel.Senha">
+            <summary>
+            Define a senha do funcionário.
+            </summary>
+        </member>
+        <member name="M:BankTwo_v2.Funcionarios.FuncionarioAutenticavel.Autenticar(System.String)">
+            <summary>
+            Verifica se a senha informada é igual a senha cadastrada e autoriza a entrada no sistema.
+            </summary>
+            <param name="senha">senha informada pelo cliente para autenticação.</param>
+            <returns>Retorna True ou False para a autenticação.</returns>
+        </member>
+        <member name="T:BankTwo_v2.Funcionarios.GerenteDeConta">
+            <summary>
+            Define um <see cref="T:BankTwo_v2.Funcionarios.GerenteDeConta"/> no banco BankNumbers.
+            </summary>
+        </member>
+        <member name="M:BankTwo_v2.Funcionarios.GerenteDeConta.#ctor(System.String)">
+            <summary>
+            Cria uma instância de um funcionário com cargo de <see cref="T:BankTwo_v2.Funcionarios.GerenteDeConta"/>.
+            </summary>
+            <param name="cpf">Texto do CPF do funcionáro.</param>
+        </member>
+        <member name="M:BankTwo_v2.Funcionarios.GerenteDeConta.GetBonificacao">
+            <summary>
+            Calcula a bonificação do <see cref="T:BankTwo_v2.Funcionarios.GerenteDeConta"/>.
+            </summary>
+            <returns>Retorna o valor calculado da bonificação.</returns>
+        </member>
+        <member name="M:BankTwo_v2.Funcionarios.GerenteDeConta.AumentarSalario">
+            <summary>
+            Calcula e define o novo salário do <see cref="T:BankTwo_v2.Funcionarios.GerenteDeConta"/>.
+            </summary>
+        </member>
+        <member name="T:BankTwo_v2.GerenciadorBonificacao">
+            <summary>
+            Responsável por Registrar Bonificações e retornar o total de Bonificações dos funcionários do banco BankNumbers.
+            </summary>
+        </member>
+        <member name="M:BankTwo_v2.GerenciadorBonificacao.Registrar(BankTwo_v2.Funcionarios.Funcionario)">
+            <summary>
+            Acumula o valor da bonificação do funcionário.
+            </summary>
+            <param name="funcionario">Funcionário que terá sua bonificação registrada.</param>
+        </member>
+        <member name="M:BankTwo_v2.GerenciadorBonificacao.GetTotalBonificacao">
+            <summary>
+            Mostra o total de bonificações concedidas.
+            </summary>
+            <returns>Total de Bonificações Registradas</returns>
+        </member>
+        <member name="T:BankTwo_v2.ParceiroComercial">
+            <summary>
+            Parceiro Comercial do banco BankNumbers.
+            </summary>
+        </member>
+        <member name="P:BankTwo_v2.ParceiroComercial.Senha">
+            <summary>
+            Define uma senha de acesso ao sistema.
+            </summary>
+        </member>
+        <member name="M:BankTwo_v2.ParceiroComercial.Autenticar(System.String)">
+            <summary>
+            Confere se a senha informada é igual a cadastrada para liberar acesso ao sistema.
+            </summary>
+            <param name="senha">senha informada para autenticação no sistema.</param>
+            <returns>True ou False para liberação do acesso ao sistema</returns>
+        </member>
+        <member name="T:BankOne.Cliente">
+            <summary>
+            Define um Cliente do banco BankNumbers
+            </summary>
+        </member>
+        <member name="P:BankOne.Cliente.Nome">
+            <summary>
+            Define o nome do cliente que está sendo cadastrado.
+            </summary>
+        </member>
+        <member name="P:BankOne.Cliente.Cpf">
+            <summary>
+            Define o CPF do cliente que está sendo cadastrado.
+            </summary>
+        </member>
+        <member name="P:BankOne.Cliente.Profissao">
+            <summary>
+            Define a profissão do cliente que está sendo cadastrado.
+            </summary>
+        </member>
+        <member name="T:ContaCorrente">
+            <summary>
+            Cria uma Conta Corrente do banco BankNumbers
+            </summary>
+        </member>
+        <member name="P:ContaCorrente.ContadorSaquesNaoPermitidos">
+            <summary>
+            Numero de saques recusados pelo sistema.
+            </summary>
+        </member>
+        <member name="P:ContaCorrente.TransferenciasNaoPermitidas">
+            <summary>
+            Numero de transferências recusadas pelo sistema.
+            </summary>
+        </member>
+        <member name="P:ContaCorrente.TotalContasCriadas">
+            <summary>
+            Numero total de contas criadas no banco BankNumbers.
+            </summary>
+        </member>
+        <member name="P:ContaCorrente.TaxaOperacao">
+            <summary>
+            Valor da taxa cobrada para manutenção das contas (Calculada com base no total de contas criadas).
+            </summary>
+        </member>
+        <member name="P:ContaCorrente.Titular">
+            <summary>
+            Define os dados do cliente cadastrado no banco BankNumbers.
+            </summary>
+        </member>
+        <member name="P:ContaCorrente.Agencia">
+            <summary>
+            Define o numero da agencia, recebida por argumento, da conta do cliente cadastrado no banco BankNumbers.
+            </summary>
+        </member>
+        <member name="P:ContaCorrente.Numero">
+            <summary>
+            Define o numero da conta, recebida por argumento, da conta do cliente cadastrado no banco BankNumbers.
+            </summary>
+        </member>
+        <member name="P:ContaCorrente.Saldo">
+            <summary>
+            Define o saldo da conta do cliente cadastrado no banco BankNumbers.
+            </summary>
+        </member>
+        <member name="M:ContaCorrente.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Cria uma instância de ContaCorrente do banco BankNumbers
+            </summary>
+            <param name="agencia">Atribui valor para a propriedade <see cref="P:ContaCorrente.Agencia"/> e deve ser um número positivo.</param>
+            <param name="numero">Atribui valor para a propriedade <see cref="P:ContaCorrente.Numero"/> e deve ser um número positivo.</param>
+        </member>
+        <member name="M:ContaCorrente.Sacar(System.Double)">
+            <summary>
+            Atualiza o valor do <see cref="P:ContaCorrente.Saldo"/> do cliente.
+            <exception cref="T:System.ArgumentException">Exceção lançada quando o valor informado não é um valor positivo (maior que zero).</exception>
+            <exception cref="T:_05_Away_Bank.SaldoInsuficienteException">Exceção lançada quando o valor informado é maior que o <see cref="P:ContaCorrente.Saldo"/> do cliente.</exception>
+            </summary>
+            <param name="valor">Valor a ser descontado da conta do cliente. O argumento <paramref name="valor"/> deve ser positivo e maior que o <see cref="P:ContaCorrente.Saldo"/> do cliente.</param>
+        </member>
+        <member name="M:ContaCorrente.Depositar(System.Double)">
+            <summary>
+            Atualiza o valor do <see cref="P:ContaCorrente.Saldo"/> do cliente.
+            <exception cref="T:System.ArgumentException">Exceção lançada quando o valor informado não é um valor positivo (maior que zero).</exception>
+            </summary>
+            <param name="valor">Valor a ser acrescentado da conta do cliente. O argumento <paramref name="valor"/> deve ser positivo.</param>
+        </member>
+        <member name="M:ContaCorrente.Transferir(System.Double,ContaCorrente)">
+            <summary>
+            Transfere o valor do <see cref="P:ContaCorrente.Saldo"/> do cliente para a conta de destino da operação.
+            <exception cref="T:System.ArgumentException">Exceção lançada quando o valor informado não é um valor positivo (maior que zero).</exception>
+            <exception cref="T:_05_Away_Bank.OperacaoFinanceiraException">Exceção lançada quando o valor informado é maior que o <see cref="P:ContaCorrente.Saldo"/> do cliente origem.</exception>
+            </summary>
+            <param name="valor">Valor a ser descontado da conta de origem e acrescentado da conta de destino. O argumento <paramref name="valor"/> deve ser positivo e maior que o <see cref="P:ContaCorrente.Saldo"/> da conta de origem.</param>
+            <param name="contaDestino">Identificação da Conta que será destinado o valor da operação.</param>
+        </member>
+        <member name="T:_05_Away_Bank.OperacaoFinanceiraException">
+            <summary>
+            Exceção de Operações financeiras
+            </summary>
+        </member>
+        <member name="M:_05_Away_Bank.OperacaoFinanceiraException.#ctor">
+            <summary>
+            Retorna Exceção padrão.
+            </summary>
+        </member>
+        <member name="M:_05_Away_Bank.OperacaoFinanceiraException.#ctor(System.String)">
+            <summary>
+            Retorna Exceção com mensagem personalizada pelo <paramref name="mensagem"/> informado.
+            </summary>
+            <param name="mensagem">Texto de erro personalizado apresentado.</param>
+        </member>
+        <member name="M:_05_Away_Bank.OperacaoFinanceiraException.#ctor(System.String,System.Exception)">
+            <summary>
+            Retorna Exceção com mensagem personalizada pelo <paramref name="mensagem"/> informado e recebe uma Excessão Interna.
+            </summary>
+            <param name="mensagem">Texto de erro personalizado apresentado</param>
+            <param name="excessaoInterna">Exceção interna recebida</param>
+        </member>
+        <member name="T:_05_Away_Bank.SaldoInsuficienteException">
+            <summary>
+            Exceção de Saldo Insuficiente para realizar operações financeiras.
+            </summary>
+        </member>
+        <member name="P:_05_Away_Bank.SaldoInsuficienteException.Saldo">
+            <summary>
+            Define o valor disponível na conta do cliente BankNumbers.
+            </summary>
+        </member>
+        <member name="P:_05_Away_Bank.SaldoInsuficienteException.ValorSaque">
+            <summary>
+            Define o valor a ser retirado da conta do cliente BankNumbers.
+            </summary>
+        </member>
+        <member name="M:_05_Away_Bank.SaldoInsuficienteException.#ctor">
+            <summary>
+            Retorna Exceção padrão.
+            </summary>
+        </member>
+        <member name="M:_05_Away_Bank.SaldoInsuficienteException.#ctor(System.String)">
+            <summary>
+            Retorna Exceção com mensagem personalizada pelo <paramref name="mensagem"/> informado.
+            </summary>
+            <param name="mensagem">Texto de erro personalizado apresentado.</param>
+        </member>
+        <member name="M:_05_Away_Bank.SaldoInsuficienteException.#ctor(System.String,System.Exception)">
+            <summary>
+            Retorna Exceção com mensagem personalizada pelo <paramref name="mensagem"/> informado e recebe uma Excessão Interna.
+            </summary>
+            <param name="mensagem">Texto de erro personalizado apresentado</param>
+            <param name="excessaoInterna">Exceção interna recebida</param>
+        </member>
+        <member name="M:_05_Away_Bank.SaldoInsuficienteException.#ctor(System.Double,System.Double)">
+            <summary>
+            Retorna Exceção com mensagem detalhada dos valores que tentaram ser alterados.
+            </summary>
+            <param name="saldo">Valor do saldo da conta do cliente.</param>
+            <param name="valorSaque">Valor do saque a ser realizado.</param>
+        </member>
+    </members>
+</doc>

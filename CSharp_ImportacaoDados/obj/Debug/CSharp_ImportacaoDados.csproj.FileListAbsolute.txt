@@ -1,0 +1,11 @@
+C:\Users\alexandre.pereira\Documents\Projetos\CSharp\CSharp_ImportacaoDados\CSharp_ImportacaoDados\bin\Debug\CSharp_ImportacaoDados.exe.config
+C:\Users\alexandre.pereira\Documents\Projetos\CSharp\CSharp_ImportacaoDados\CSharp_ImportacaoDados\bin\Debug\CSharp_ImportacaoDados.exe
+C:\Users\alexandre.pereira\Documents\Projetos\CSharp\CSharp_ImportacaoDados\CSharp_ImportacaoDados\bin\Debug\CSharp_ImportacaoDados.pdb
+C:\Users\alexandre.pereira\Documents\Projetos\CSharp\CSharp_ImportacaoDados\CSharp_ImportacaoDados\bin\Debug\Modelos.dll
+C:\Users\alexandre.pereira\Documents\Projetos\CSharp\CSharp_ImportacaoDados\CSharp_ImportacaoDados\bin\Debug\Modelos.xml
+C:\Users\alexandre.pereira\Documents\Projetos\CSharp\CSharp_ImportacaoDados\CSharp_ImportacaoDados\obj\Debug\CSharp_ImportacaoDados.csprojAssemblyReference.cache
+C:\Users\alexandre.pereira\Documents\Projetos\CSharp\CSharp_ImportacaoDados\CSharp_ImportacaoDados\obj\Debug\CSharp_ImportacaoDados.csproj.CoreCompileInputs.cache
+C:\Users\alexandre.pereira\Documents\Projetos\CSharp\CSharp_ImportacaoDados\CSharp_ImportacaoDados\obj\Debug\CSharp_ImportacaoDados.csproj.CopyComplete
+C:\Users\alexandre.pereira\Documents\Projetos\CSharp\CSharp_ImportacaoDados\CSharp_ImportacaoDados\obj\Debug\CSharp_ImportacaoDados.exe
+C:\Users\alexandre.pereira\Documents\Projetos\CSharp\CSharp_ImportacaoDados\CSharp_ImportacaoDados\obj\Debug\CSharp_ImportacaoDados.pdb
+C:\Users\alexandre.pereira\Documents\Projetos\CSharp\CSharp_ImportacaoDados\CSharp_ImportacaoDados\bin\Debug\CSharp_ImportacaoDados.xml

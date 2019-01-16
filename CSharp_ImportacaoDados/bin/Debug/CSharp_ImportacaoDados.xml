@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CSharp_ImportacaoDados</name>
+    </assembly>
+    <members>
+        <member name="M:CSharp_ImportacaoDados.Program.EscreverBuffer(System.Byte[],System.Int32)">
+            <summary>
+            Decodificar os dados byte em texto e escrever na tela do Console.
+            </summary>
+            <param name="buffer">Dados de origem, do tipo 'byte'</param>
+            <param name="numBytesLidos">Número de bytes que serão lidos dos dados de origem</param>
+        </member>
+        <member name="M:CSharp_ImportacaoDados.Program.ConverterStringParaContaCorrente(System.String)">
+            <summary>
+            Criar um Objeto do tipo ContaCorrente.
+            </summary>
+            <param name="linha">Linha de dados lida do arquivo de Origem</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
